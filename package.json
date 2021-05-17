@@ -1,0 +1,24 @@
+{
+  "name": "hello-docker-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "docker build . -t fernandobhz/hello-docker-node",
+    "push": "docker push fernandobhz/hello-docker-node",
+    "run": "docker run -p 10290:10290 -d fernandobhz/hello-docker-node",
+    "bash": "docker exec -it xxx /bin/bash",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
